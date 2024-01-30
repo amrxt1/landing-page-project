@@ -1,3 +1,30 @@
+.header ul {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: wheat;
+  border: 1px solid black;
+}
+
 .hero {
   height: 100vh;
+  background-color: lightblue;
+
+  display: flex;
+}
+
+.hero div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  flex: 1;
+}
+
+#hero-image {
+  max-width: 70%;
 }
