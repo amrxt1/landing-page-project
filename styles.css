@@ -9,22 +9,34 @@
 
 .hero {
   height: 100vh;
-  background-color: lightblue;
-
-  display: flex;
-}
-
-.hero div {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .value {
-  flex: 1;
+  grid-column: 1 / 1;
 }
 
 #hero-image {
-  max-width: 70%;
+  max-width: 100%;
+  height: auto;
+  grid-column: 2 / span 1;
+}
+
+/* Media Query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .value {
+    grid-column: 1;
+  }
+
+  #hero-image {
+    grid-column: 1;
+    margin-top: 20px;
+  }
 }
