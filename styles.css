@@ -32,7 +32,7 @@
 
 .value {
   grid-column: 1 / 1;
-  padding: 0px 17%;
+  padding: 0px 16%;
 }
 
 .value-heading {
@@ -66,4 +66,35 @@
     grid-column: 1;
     margin-bottom: 33%;
   }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5%;
+
+  padding: 0px 7%;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px 40px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item > img {
+  width: 33%;
+  align-self: center;
+}
+
+.grid-item > h3 {
+  font-size: 1.36rem;
+  padding: 10px 0px;
+}
+
+.grid-item > p {
+  font-size: 1.17rem;
 }
