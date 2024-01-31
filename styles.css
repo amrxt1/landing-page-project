@@ -1,25 +1,51 @@
-.header ul {
-  padding: 10px;
+.header {
+  width: 100%;
+  box-shadow: 0 -10px 33px rgba(0, 0, 0, 0.8);
+  height: 7vh;
+
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
-  background-color: wheat;
-  border: 1px solid black;
+  position: relative;
+  z-index: 2;
+
+  background-color: lightcoral;
+  color: white;
 }
 
 .hero {
-  height: 100vh;
+  height: 93vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
+
+  background-color: lightblue;
+  z-index: 1;
+}
+
+.hero > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .value {
   grid-column: 1 / 1;
+  padding: 0px 17%;
+}
+
+.value-heading {
+  font-size: 2.9rem;
+  font-weight: 700;
+}
+
+.value-how {
+  margin-top: 17px;
 }
 
 #hero-image {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   grid-column: 2 / span 1;
 }
@@ -32,11 +58,12 @@
   }
 
   .value {
+    margin-top: 10%;
     grid-column: 1;
   }
 
   #hero-image {
     grid-column: 1;
-    margin-top: 20px;
+    margin-bottom: 33%;
   }
 }
