@@ -80,6 +80,19 @@ a:visited {
   margin-top: 17px;
 }
 
+#contact-btn {
+  display: block;
+  text-align: center;
+
+  margin: 10px 0px;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: navy;
+  border: 2px solid blue;
+  color: white;
+  border-radius: 10px;
+}
+
 #hero-image {
   max-width: 80%;
   height: auto;
